@@ -4,5 +4,5 @@ import java.util.List;
 
 public interface IImplementerDao {
 
-    List<Implementer> getImplementerInfo(); //a collection
+    List<Implementer> getImplementerInfo(); //collection
 }
