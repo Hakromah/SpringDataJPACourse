@@ -5,6 +5,8 @@ import com.telusko.datajpaproject01.repository.IVaccineRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 public class VaccineServiceImpl implements IVaccineService {
 
@@ -47,7 +49,29 @@ public class VaccineServiceImpl implements IVaccineService {
     }
 
     @Override
-    public Iterable<Vaccine> getAllVaccines(Iterable<Integer>  vaccineIds) {
+    public Iterable<Vaccine> getAllVaccines(Iterable<Integer> vaccineIds) {
         return repo.findAllById(vaccineIds);
+    }
+
+    @Override
+    public Vaccine fetchVaccineById(Integer id) {
+        Optional<Vaccine> optional = repo.findById(id);
+        if (optional.isPresent()) {
+            return optional.get();
+        } else {
+
+            return new Vaccine();
+        }
+
+    }
+
+    @Override
+    public String deleteVaccineById(Integer id) {
+        Optional<Vaccine> optional = repo.findById(id);
+        if (optional.isPresent()) {
+            repo.deleteById(id);
+            return "Vaccine  with id " + id + " deleted successfully";
+        }
+        return "Vaccine with id " + id + " is not present in the data base";
     }
 }

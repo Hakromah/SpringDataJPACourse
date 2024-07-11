@@ -41,16 +41,23 @@ public class DataJpaProject01Application {
         }
 
         // get all vaccines from DB
-        service.getAllVaccines().forEach(vaccine -> System.out.println(vaccine));
+//        service.getAllVaccines().forEach(vaccine -> System.out.println(vaccine));
+//
+//        // Let's get all specific vaccine ids from DB
+//        ArrayList<Integer> list = new ArrayList<>();
+//        list.add(5);
+//        list.add(2);
+//        list.add(6);
+//        list.add(4);
+//        list.add(5);
+//        service.getAllVaccines(list).forEach(vaccine -> System.out.println(vaccine));
 
-        // Let's get all specific vaccine ids from DB
-        ArrayList<Integer> list = new ArrayList<>();
-        list.add(5);
-        list.add(2);
-        list.add(6);
-        list.add(4);
-        list.add(5);
-        service.getAllVaccines(list).forEach(vaccine -> System.out.println(vaccine));
+        Vaccine vc = service.fetchVaccineById(2);
+        System.out.println(vc);
+
+        //Delete
+        System.out.println(service.deleteVaccineById(2));
+
 
     }
 

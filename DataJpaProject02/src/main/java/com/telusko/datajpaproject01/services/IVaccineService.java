@@ -20,5 +20,7 @@ public interface IVaccineService {
 
     // method overloading(same method name but different parameters)
     public Iterable<Vaccine> getAllVaccines(Iterable<Integer> vaccineIds);
+    public Vaccine fetchVaccineById(Integer id);
+    public String deleteVaccineById(Integer id);
 
 }
