@@ -1,8 +1,6 @@
-package com.telusko.datajpaproject01.services;
+package com.telusko.datajpaproject02.services;
 
-import com.telusko.datajpaproject01.entity.Vaccine;
-
-import static org.springframework.data.jpa.domain.AbstractPersistable_.id;
+import com.telusko.datajpaproject02.entity.Vaccine;
 
 public interface IVaccineService {
 

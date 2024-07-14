@@ -1,7 +1,7 @@
-package com.telusko.datajpaproject01.services;
+package com.telusko.datajpaproject02.services;
 
-import com.telusko.datajpaproject01.entity.Vaccine;
-import com.telusko.datajpaproject01.repository.IVaccineRepo;
+import com.telusko.datajpaproject02.entity.Vaccine;
+import com.telusko.datajpaproject02.repository.IVaccineRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +15,7 @@ public class VaccineServiceImpl implements IVaccineService {
 
     @Override
     public String registerVaccineInfo(Vaccine vaccine) {
-        Vaccine vdb = repo.save(vaccine);
+        com.telusko.datajpaproject02.entity.Vaccine vdb = repo.save(vaccine);
         Integer id = vdb.getId();
         if (vdb != null) {
             return "Vaccine Info with Id: " + id + " Registered Successfully";

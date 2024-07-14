@@ -1,7 +1,7 @@
-package com.telusko.datajpaproject01.repository;
+package com.telusko.datajpaproject02.repository;
 
 
-import com.telusko.datajpaproject01.entity.Student;
+import com.telusko.datajpaproject02.entity.Student;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

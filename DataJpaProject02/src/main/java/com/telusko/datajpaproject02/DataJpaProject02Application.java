@@ -1,20 +1,18 @@
-package com.telusko.datajpaproject01;
+package com.telusko.datajpaproject02;
 
-import com.telusko.datajpaproject01.entity.Vaccine;
-import com.telusko.datajpaproject01.services.IVaccineService;
-import com.telusko.datajpaproject01.services.VaccineServiceImpl;
+import com.telusko.datajpaproject02.entity.Vaccine;
+import com.telusko.datajpaproject02.services.VaccineServiceImpl;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 @SpringBootApplication
-public class DataJpaProject01Application {
+public class DataJpaProject02Application {
 
     public static void main(String[] args) {
-        ConfigurableApplicationContext container = SpringApplication.run(DataJpaProject01Application.class, args);
+        ConfigurableApplicationContext container = SpringApplication.run(DataJpaProject02Application.class, args);
 
         VaccineServiceImpl service = container.getBean(VaccineServiceImpl.class);
 
