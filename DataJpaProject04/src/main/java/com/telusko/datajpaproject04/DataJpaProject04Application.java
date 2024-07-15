@@ -31,7 +31,7 @@ public class DataJpaProject04Application {
 //        System.out.println(status);
 
         // #2 JPA Repository delete methods
-        String status = service.removeVaccineByIdsCrud(List.of(102, 103, 104));
+        String status = service.removeVaccineByIdsCrud(List.of(1));
         System.out.println(status);
 
     }

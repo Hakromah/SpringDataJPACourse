@@ -19,4 +19,5 @@ public interface IVaccineService {
 
     public String removeVaccineByIds(Iterable<Integer> ids);
     public String removeVaccineByIdsCrud(List<Integer> ids);
+
 }

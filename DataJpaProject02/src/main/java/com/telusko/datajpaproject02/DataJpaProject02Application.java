@@ -21,9 +21,9 @@ public class DataJpaProject02Application {
 //        System.out.println(msg);
 
         // Let's save multiple records in one go using saveAll() method
-        Vaccine v2 = new Vaccine("Moderna", "Pfizer", 2500.50);
-        Vaccine v3 = new Vaccine("AstraZeneca", "Pfizer", 3500.50);
-        Vaccine v4 = new Vaccine("Sputnik", "Pfizer", 4500.50);
+        Vaccine v2 = new Vaccine("Java", "Oracle", 352.68);
+        Vaccine v3 = new Vaccine("React", "Meta", 458.60);
+        Vaccine v4 = new Vaccine("Spring", "Pivotal", 254.90);
 
         Iterable<Vaccine> vaccineList = service.registerMultipleVaccines(Arrays.asList(v2, v3, v4));
         vaccineList.forEach(System.out::println);
