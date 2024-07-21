@@ -21,7 +21,7 @@ public class DataJpaProject02Application {
 //        System.out.println(msg);
 
         // Let's save multiple records in one go using saveAll() method
-        Vaccine v = new Vaccine(3,"Maths", "Math Company", 1000.68);
+        Vaccine v = new Vaccine(3,"Covid 19", "Covid Vaccine", 1000.68);
 //        Vaccine v3 = new Vaccine("React", "Meta", 458.60);
 //        Vaccine v4 = new Vaccine("Spring", "Pivotal", 254.90);
 

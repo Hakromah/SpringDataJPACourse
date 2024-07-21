@@ -1,4 +1,4 @@
-package com.telusko.datajpaproject02.repository;
+package com.telusko.datajpaproject01.repository;
 
 
 import com.telusko.datajpaproject02.entity.Student;

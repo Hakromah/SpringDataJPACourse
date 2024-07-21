@@ -1,7 +1,7 @@
-package com.telusko.datajpaproject02;
+package com.telusko.datajpaproject01;
 
 import com.telusko.datajpaproject02.entity.Student;
-import com.telusko.datajpaproject02.repository.IStudentRepository;
+import com.telusko.datajpaproject01.repository.IStudentRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
