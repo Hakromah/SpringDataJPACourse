@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Customer {
 
     @Id
-    private Integer id;
+    private String id;
 
     private Integer cxNo;
     private String name;
@@ -20,7 +20,7 @@ public class Customer {
         super();
     }
 
-    public Customer(Integer id, Integer cxNo, String name, String city) {
+    public Customer(String id, Integer cxNo, String name, String city) {
         this.id = id;
         this.cxNo = cxNo;
         this.name = name;
